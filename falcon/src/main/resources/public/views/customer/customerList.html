@@ -1,0 +1,14 @@
+<crudheader kind="CUSTOMER"/>
+
+<button type="button" class="btn btn-primary" ng-click="service.go('/customernew')">
+	Novo
+</button>
+
+<tablepl registers="registers" 
+		 removeaction="removeRegister()" 
+		 selectaction="selectRegister(item)"
+		 columntitles="['ID', 'Nome', 'Cpf', 'Obs', 'Cidade']"
+		 valuestolist="['id', 'document', 'name', 'city']"
+		 pagetoedit="#customeredit">
+</tablepl>
+

@@ -1,0 +1,15 @@
+<crudheader kind="USER"></crudheader>
+
+<button type="button" class="btn btn-primary" ng-click="service.go('/usernew')">
+	Novo
+	<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button>
+
+<tablepl registers="items" 
+		 removeaction="removeUser()" 
+		 selectaction="selectUser(item)"
+		 columntitles="['ID', 'Usuário','','E-Mail']"
+		 valuestolist="['id', 'login', 'mail']"
+		 pagetoedit="#useredit"
+		  >
+</tablepl>
