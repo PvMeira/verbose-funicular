@@ -1,0 +1,14 @@
+<crudheader kind="STATE"></crudheader>
+
+<button type="button" class="btn btn-primary" ng-click="service.go('/statenew')">
+	Novo
+	<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+</button>
+
+<tablepl registers="registers" 
+		 removeaction="removeRegister()" 
+		 selectaction="selectRegister(item)"
+		 columntitles="['ID', 'Nome', 'País']"
+		 valuestolist="['id', 'name', 'country']"
+		 pagetoedit="#stateedit">
+</tablepl>
